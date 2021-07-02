@@ -14,7 +14,7 @@ class CreateComplimentController {
             user_receiver,
             message
         })
-        return response.json(compliment);
+        return response.status(201).json(compliment);
     }
 }
 

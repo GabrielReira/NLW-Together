@@ -5,6 +5,7 @@ import { v4 as uuid } from 'uuid';
 @Entity('users')
 class User {
 
+    @Exclude()
     @PrimaryColumn()
     readonly id: string;
 

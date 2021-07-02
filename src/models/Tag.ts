@@ -1,5 +1,5 @@
 import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from 'typeorm';
-import { Expose } from 'class-transformer';
+// import { Expose } from 'class-transformer';
 import { v4 as uuid } from 'uuid';
 
 @Entity('tags')
@@ -18,10 +18,10 @@ class Tag {
     updated_at: Date;
 
     // Customizando o retorno de tags
-    @Expose({ name: 'name_custom' })
+    /* @Expose({ name: 'name_custom' })
     nameCustom(): string {
         return `#${this.name}`;
-    }
+    } */
 
     // Sempre que adicionar uma tag: criar seu id
     constructor() {
